@@ -1,8 +1,8 @@
 package clubs.vicki.long0.clubs;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -11,7 +11,7 @@ import com.parse.ParseUser;
 /**
  * Created by User on 3/8/2015.
  */
-public class AttendanceActivity extends ActionBarActivity {
+public class AttendanceActivity extends Activity {
 
     private Intent i;
 
