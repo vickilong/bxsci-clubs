@@ -9,12 +9,6 @@
     <color name="gray">#c8c8c8</color>
     <color name="green">#339933</color>
 
-    <string name="menu_attendance">Attendance</string>
-    <string name="menu_your_clubs">Your Clubs</string>
-    <string name="menu_new_club">New Club</string>
-    <string name="menu_settings">Settings</string>
-    <string name="menu_logout">Logout</string>
-
     <string name="home_text">Home</string>
     <string name="login_text">Login</string>
     <string name="register_text">Register</string>
@@ -25,5 +19,15 @@
     <string name="OSIS_hint">OSIS</string>
     <string name="homeroom_hint">Homeroom</string>
     <string name="register_success">Registered!</string>
+
+    <string name="menu_attendance">Attendance</string>
+    <string name="menu_your_clubs">Your Clubs</string>
+    <string name="menu_new_club">New Club</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="code_hint">Meeting code</string>
+    <string name="attendance_text">Log Attendance</string>
+    <string name="attendance_success">Success!</string>
 
 </resources>

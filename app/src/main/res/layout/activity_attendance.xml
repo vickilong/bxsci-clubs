@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:padding="30dp" >
+
+    <EditText
+        android:id="@+id/attendance_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/code_hint"
+        android:inputType="text" />
+
+    <View
+        android:id="@+id/attendance_split_line"
+        android:layout_width="150dp"
+        android:layout_height= "5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/attendance_input"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/attendance_button"
+        android:text="@string/attendance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendance_split_line"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        style="?android:attr/borderlessButtonStyle" />
 
 </RelativeLayout>
