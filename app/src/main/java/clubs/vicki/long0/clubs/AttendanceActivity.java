@@ -70,8 +70,10 @@ public class AttendanceActivity extends Activity {
             case R.id.attendance:
                 return true;
             case R.id.your_clubs:
+                yourClubs();
                 return true;
             case R.id.new_club:
+                newClub();
                 return true;
             case R.id.settings:
                 return true;
@@ -81,13 +83,6 @@ public class AttendanceActivity extends Activity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    public void logout () {
-        ParseUser.logOut();
-        i = new Intent(AttendanceActivity.this, LoginActivity.class);
-        startActivity(i);
-        finish();
     }
 
     public void getInit () {
@@ -102,6 +97,25 @@ public class AttendanceActivity extends Activity {
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+    }
+
+    public void yourClubs () {
+        i = new Intent(AttendanceActivity.this, YourClubsActivity.class);
+        startActivity(i);
+        finish();
+    }
+
+    public void newClub () {
+        i = new Intent(AttendanceActivity.this, NewClubActivity.class);
+        startActivity(i);
+        finish();
+    }
+
+    public void logout () {
+        ParseUser.logOut();
+        i = new Intent(AttendanceActivity.this, LoginActivity.class);
+        startActivity(i);
+        finish();
     }
 
 }

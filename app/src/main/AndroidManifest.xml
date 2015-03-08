@@ -32,6 +32,12 @@
         <activity
             android:name=".AttendanceActivity" >
         </activity>
+        <activity
+            android:name=".NewClubActivity" >
+        </activity>
+        <activity
+            android:name=".YourClubsActivity" >
+        </activity>
     </application>
 
 </manifest>
