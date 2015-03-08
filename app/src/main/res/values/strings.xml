@@ -7,7 +7,7 @@
 
     <color name="white">#FFFFFF</color>
     <color name="yellow">#FFFFCC</color>
-    <color name="gray">#909090</color>
+    <color name="gray">#c8c8c8</color>
     <color name="green">#339933</color>
 
     <string name="menu_attendance">Attendance</string>

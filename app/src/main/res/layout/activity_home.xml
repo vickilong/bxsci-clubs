@@ -29,7 +29,7 @@
         style="?android:attr/borderlessButtonStyle" />
 
     <View
-        android:id="@+id/split_line"
+        android:id="@+id/home_split_line"
         android:layout_width="150dp"
         android:layout_height= "5dp"
         android:layout_centerHorizontal="true"
@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/home_to_register_button"
-        android:layout_below="@id/split_line"
+        android:layout_below="@id/home_split_line"
         android:text="@string/register_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

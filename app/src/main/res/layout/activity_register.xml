@@ -1,42 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:padding="30dp" >
 
     <EditText
         android:id="@+id/register_name"
-        android:layout_width="fill_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
         android:hint="@string/name_hint"
         android:inputType="textCapWords" />
 
     <EditText
         android:id="@+id/register_password"
-        android:layout_width="fill_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
         android:layout_below="@id/register_name"
         android:hint="@string/password_hint"
         android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/register_email"
-        android:layout_width="fill_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
         android:layout_below="@id/register_password"
         android:hint="@string/email_hint"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/register_OSIS"
-        android:layout_width="fill_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
         android:layout_below="@id/register_email"
         android:hint="@string/OSIS_hint"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/register_homeroom"
-        android:layout_width="fill_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
         android:layout_below="@id/register_OSIS"
         android:hint="@string/homeroom_hint"
         android:inputType="text" />
@@ -46,19 +65,29 @@
         android:text="@string/register_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/register_homeroom" />
+        android:layout_below="@id/register_homeroom"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        style="?android:attr/borderlessButtonStyle" />
+
+    <View
+        android:id="@+id/register_split_line"
+        android:layout_width="150dp"
+        android:layout_height= "5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register_button"
+        android:background="@color/gray" />
 
     <Button
         android:id="@+id/register_to_login_button"
-        android:layout_below="@id/register_button"
+        android:layout_below="@id/register_split_line"
         android:text="@string/login_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/register_to_login_button"
-        android:text="@string/register_text" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        style="?android:attr/borderlessButtonStyle" />
 
 </RelativeLayout>
