@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Clubs</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Bronx Science Clubs</string>
     <string name="action_settings">Settings</string>
 
     <color name="white">#FFFFFF</color>
