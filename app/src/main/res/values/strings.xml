@@ -9,4 +9,11 @@
     <string name="login_text">Login</string>
     <string name="register_text">Register</string>
 
+    <string name="name_hint">Name</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="OSIS_hint">OSIS</string>
+    <string name="homeroom_hint">Homeroom</string>
+    <string name="register_success">Registered!</string>
+
 </resources>
