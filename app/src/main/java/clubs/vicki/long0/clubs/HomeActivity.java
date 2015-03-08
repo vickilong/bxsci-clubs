@@ -3,7 +3,6 @@ package clubs.vicki.long0.clubs;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,7 +14,7 @@ import com.parse.ParseObject;
 /**
  * Created by User on 3/8/2015.
  */
-public class HomeActivity extends ActionBarActivity {
+public class HomeActivity extends Activity {
 
     private Button login, register;
     private Intent i;
