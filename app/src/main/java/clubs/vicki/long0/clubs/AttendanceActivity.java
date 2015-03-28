@@ -42,12 +42,13 @@ public class AttendanceActivity extends Activity {
                 String userCode = inputAttendance.getText().toString();
 
                 ParseQuery<ParseObject> query = ParseQuery.getQuery("Meeting");
-                query.whereEqualTo("Attendance_Code", userCode);
+                query.whereEqualTo("attendanceCode", userCode);
                 query.getFirstInBackground(new GetCallback<ParseObject>() {
-                    public void done(ParseObject object, ParseException e) {
-                        if (object == null) {
+                    public void done(ParseObject clubMeeting, ParseException e) {
+                        if (clubMeeting == null) {
                             Log.d("score", "The getFirst request failed.");
                         } else {
+                        	logAttendance(clubMeeting);
                             attendanceSuccess();
                         }
                     }
@@ -89,6 +90,13 @@ public class AttendanceActivity extends Activity {
         inputAttendance = (EditText) findViewById(R.id.attendance_input);
         logAttendance = (Button) findViewById(R.id.attendance_button);
     }
+    
+    public void logAttendance (ParseObject meeting) {
+    	ParseObject attendance = new ParseObject("Attendance");
+    	attendance.put("studentPointer", ParseUser.getCurrentUser());
+    	attendance.put("meetingPointer", meeting);
+    	attendance.saveInBackground();
+    }
 
     public void attendanceSuccess () {
         Context context = getApplicationContext();
@@ -102,20 +110,17 @@ public class AttendanceActivity extends Activity {
     public void yourClubs () {
         i = new Intent(AttendanceActivity.this, YourClubsActivity.class);
         startActivity(i);
-        finish();
     }
 
     public void newClub () {
         i = new Intent(AttendanceActivity.this, NewClubActivity.class);
         startActivity(i);
-        finish();
     }
 
     public void logout () {
         ParseUser.logOut();
         i = new Intent(AttendanceActivity.this, LoginActivity.class);
         startActivity(i);
-        finish();
     }
 
 }

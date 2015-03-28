@@ -20,7 +20,6 @@ public class HomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
-        Parse.initialize(this, "KuauNlNi5sL9O5GhCleBJxIR7st2FxInU3WNkR57", "PTQCavJmc2gTHNrgKd35K9AXooLVDBHPk5uZhV3R");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -32,7 +31,6 @@ public class HomeActivity extends Activity {
             public void onClick(View v) {
                 i = new Intent(HomeActivity.this, LoginActivity.class);
                 startActivity(i);
-                finish();
             }
         });
 
@@ -40,7 +38,6 @@ public class HomeActivity extends Activity {
             public void onClick(View v) {
                 i = new Intent(HomeActivity.this, RegisterActivity.class);
                 startActivity(i);
-                finish();
             }
         });
     }

@@ -1,5 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow" >
+    
+    <TextView
+        android:id="@+id/new_club_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/new_club"
+        android:textColor="@color/green"/>
+    
+    <EditText
+        android:id="@+id/new_club_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/new_club_title"
+        android:hint="@string/new_club_hint"
+        android:inputType="text" />
+    
+    <EditText
+        android:id="@+id/new_club_president"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/new_club_name"
+        android:hint="@string/president_hint"
+        android:inputType="text" />
+    
+    <EditText
+        android:id="@+id/new_club_president_osis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/new_club_president"
+        android:hint="@string/president_osis_hint"
+        android:inputType="text" />
+    
+    <EditText
+        android:id="@+id/new_club_vice_president"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/new_club_president_osis"
+        android:hint="@string/vice_president_hint"
+        android:inputType="text" />
+    
+    <EditText
+        android:id="@+id/new_club_vice_president_osis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/new_club_vice_president"
+        android:hint="@string/vice_president_osis_hint"
+        android:inputType="text" />
+    
+    <EditText
+        android:id="@+id/new_club_secretary"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/new_club_vice_president_osis"
+        android:hint="@string/secretary_hint"
+        android:inputType="text" />
+    
+    <EditText
+        android:id="@+id/new_club_secretary_osis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/new_club_secretary"
+        android:hint="@string/secretary_osis_hint"
+        android:inputType="text" />
+    
+    <Button
+        android:id="@+id/new_club_button"
+        android:text="@string/new_club_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_club_secretary_osis"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        style="?android:attr/borderlessButtonStyle" />
 
 </RelativeLayout>
