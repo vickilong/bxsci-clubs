@@ -29,5 +29,15 @@
     <string name="code_hint">Meeting code</string>
     <string name="attendance_text">Log Attendance</string>
     <string name="attendance_success">Success!</string>
+    
+    <string name="new_club">New Club</string>
+    <string name="new_club_hint">Name</string>
+    <string name="president_hint">President</string>
+    <string name="president_osis_hint">President OSIS</string>
+    <string name="vice_president_hint">Vice President</string>
+    <string name="vice_president_osis_hint">Vice President OSIS</string>
+    <string name="secretary_hint">Secretary</string>
+    <string name="secretary_osis_hint">Secretary OSIS</string>
+    <string name="new_club_text">Create club</string>
 
 </resources>

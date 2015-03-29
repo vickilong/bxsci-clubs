@@ -36,9 +36,9 @@ public class RegisterActivity extends Activity {
                 user.setEmail( email.getText().toString() );
 
                 // other fields can be set just like with ParseObject
-                user.put("Name", name.getText().toString() );
-                user.put("OSIS", Integer.parseInt(OSIS.getText().toString()) );
-                user.put("Homeroom", homeroom.getText().toString());
+                user.put("name", name.getText().toString() );
+                user.put("osis", Integer.parseInt(OSIS.getText().toString()) );
+                user.put("homeroom", homeroom.getText().toString());
 
                 user.signUpInBackground(new SignUpCallback() {
                     public void done(ParseException e) {
@@ -84,7 +84,6 @@ public class RegisterActivity extends Activity {
     public void goToLogin () {
         i = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(i);
-        finish();
     }
 
 }
