@@ -57,35 +57,6 @@ public class AttendanceActivity extends Activity {
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_clubs, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle presses on the action bar items
-        switch (item.getItemId()) {
-            case R.id.attendance:
-                return true;
-            case R.id.your_clubs:
-                yourClubs();
-                return true;
-            case R.id.new_club:
-                newClub();
-                return true;
-            case R.id.settings:
-                return true;
-            case R.id.logout:
-                logout();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
     public void getInit () {
         inputAttendance = (EditText) findViewById(R.id.attendance_input);
         logAttendance = (Button) findViewById(R.id.attendance_button);
@@ -105,6 +76,33 @@ public class AttendanceActivity extends Activity {
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_clubs, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.attendance:
+                return true;
+            case R.id.your_clubs:
+                yourClubs();
+                return true;
+            case R.id.new_club:
+                newClub();
+                return true;
+            case R.id.logout:
+                logout();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void yourClubs () {

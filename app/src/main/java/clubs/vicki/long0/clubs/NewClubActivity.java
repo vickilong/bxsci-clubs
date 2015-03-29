@@ -1,12 +1,16 @@
 package clubs.vicki.long0.clubs;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.parse.ParseObject;
+import com.parse.ParseUser;
 
 /**
  * Created by User on 3/8/2015.
@@ -15,6 +19,7 @@ public class NewClubActivity extends Activity {
 	
 	private EditText newClubName, presidentInput, presidentOSISInput, vicePresidentInput, vicePresidentOSISInput, secretaryInput, secretaryOSISInput;
 	private Button newClubButton;
+    private Intent i;
 	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,5 +75,48 @@ public class NewClubActivity extends Activity {
     	secretary.put("clubPointer", club);
     	secretary.saveInBackground();
 	}
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_clubs, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.attendance:
+                attendance();
+                return true;
+            case R.id.your_clubs:
+                yourClubs();
+                return true;
+            case R.id.new_club:
+                return true;
+            case R.id.logout:
+                logout();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public void attendance () {
+        i = new Intent(NewClubActivity.this, AttendanceActivity.class);
+        startActivity(i);
+    }
+
+    public void yourClubs () {
+        i = new Intent(NewClubActivity.this, YourClubsActivity.class);
+        startActivity(i);
+    }
+
+    public void logout () {
+        ParseUser.logOut();
+        i = new Intent(NewClubActivity.this, LoginActivity.class);
+        startActivity(i);
+    }
 
 }

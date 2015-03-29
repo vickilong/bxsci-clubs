@@ -11,9 +11,6 @@
     <item android:id="@+id/new_club"
         android:title="@string/menu_new_club"
         app:showAsAction="never" />
-    <item android:id="@+id/settings"
-        android:title="@string/menu_settings"
-        app:showAsAction="never" />
     <item android:id="@+id/logout"
         android:title="@string/menu_logout"
         app:showAsAction="never" />
