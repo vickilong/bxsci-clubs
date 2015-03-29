@@ -39,6 +39,9 @@
         <activity
             android:name=".YourClubsActivity" >
         </activity>
+        <activity
+            android:name="ClubActivity" >
+        </activity>
     </application>
 
 </manifest>

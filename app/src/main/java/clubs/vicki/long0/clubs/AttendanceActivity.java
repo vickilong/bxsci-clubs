@@ -42,7 +42,7 @@ public class AttendanceActivity extends Activity {
                 String userCode = inputAttendance.getText().toString();
 
                 ParseQuery<ParseObject> query = ParseQuery.getQuery("Meeting");
-                query.whereEqualTo("attendanceCode", userCode);
+                query.whereEqualTo("objectId", userCode);
                 query.getFirstInBackground(new GetCallback<ParseObject>() {
                     public void done(ParseObject clubMeeting, ParseException e) {
                         if (clubMeeting == null) {

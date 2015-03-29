@@ -48,7 +48,7 @@
         android:fontFamily="sans-serif-condensed"
         android:layout_below="@id/new_club_president"
         android:hint="@string/president_osis_hint"
-        android:inputType="text" />
+        android:inputType="number" />
     
     <EditText
         android:id="@+id/new_club_vice_president"
@@ -70,7 +70,7 @@
         android:fontFamily="sans-serif-condensed"
         android:layout_below="@id/new_club_vice_president"
         android:hint="@string/vice_president_osis_hint"
-        android:inputType="text" />
+        android:inputType="number" />
     
     <EditText
         android:id="@+id/new_club_secretary"
@@ -92,7 +92,7 @@
         android:fontFamily="sans-serif-condensed"
         android:layout_below="@id/new_club_secretary"
         android:hint="@string/secretary_osis_hint"
-        android:inputType="text" />
+        android:inputType="number" />
     
     <Button
         android:id="@+id/new_club_button"

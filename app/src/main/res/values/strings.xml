@@ -38,5 +38,6 @@
     <string name="secretary_hint">Secretary</string>
     <string name="secretary_osis_hint">Secretary OSIS</string>
     <string name="new_club_text">Create club</string>
+    <string name="new_club_id">New Club ID</string>
 
 </resources>

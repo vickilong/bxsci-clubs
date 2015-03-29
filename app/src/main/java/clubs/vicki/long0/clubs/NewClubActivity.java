@@ -31,7 +31,6 @@ public class NewClubActivity extends Activity {
         newClubButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             	createNewParseObjects();
-            	
             }
         });
         
@@ -74,6 +73,11 @@ public class NewClubActivity extends Activity {
     	secretary.put("position", "secretary");
     	secretary.put("clubPointer", club);
     	secretary.saveInBackground();
+
+        i = new Intent(NewClubActivity.this, ClubActivity.class);
+        i.putExtra(getResources().getString(R.string.new_club_id), club.getObjectId());
+        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(i);
 	}
 
     @Override
